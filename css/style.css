@@ -30,6 +30,37 @@ body {
 
 }
 
+.main-container .inner-container #full-screen {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    padding: 3px 10px;
+    background-color: #4a4a4a;
+    border-radius: 5px;
+    color: white;
+    font-size: .8em;
+    transition: scale .2s;
+}
+
+.main-container .inner-container #speaker-view {
+    position: absolute;
+    top: 3px;
+    right: 43px;
+    padding: 3px 10px;
+    background-color: #4a4a4a;
+    border-radius: 5px;
+    color: white;
+    font-size: .8em;
+    transition: scale .2s;
+}
+
+#speaker-view:hover, #full-screen:hover {
+    cursor: pointer;
+    scale: 1.1;
+    
+}
+
+
 .main-container .inner-container .users-container .user-window {
     height: calc(100% / 5 - 4px);
     width: calc(100% / 7 - 4px);
@@ -54,7 +85,6 @@ body {
     font-size: .8em;
     color: white;
 }
-
 /* /Main Content */
 
 .bottom-bar {
