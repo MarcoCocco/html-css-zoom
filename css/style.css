@@ -4,5 +4,71 @@
     box-sizing: border-box;
 }
 
+.main-container {
+    height: 100vh;
+}
+
 /* /UTILITIES */
 
+.main-container .inner-container {
+    background-color: brown;
+    /* test */
+
+    height: calc(100% - 85px);
+
+}
+
+.main-container .inner-container .users-container {
+    height: 100%;
+    padding: 70px 70px 40px 70px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+
+}
+
+.main-container .inner-container .users-container .user-window {
+    background-color: aquamarine;
+    border: 1px solid black;
+    /* test */
+
+    height: calc(100% / 5 - 4px);
+    width: calc(100% / 7 - 4px);
+    margin-bottom: 5px;
+
+}
+
+/* /Main Content */
+
+.bottom-bar {
+    background-color: #222222;
+    padding: 10px;
+    /* test */
+
+    height: 85px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-bar .left-bar,
+.center-bar,
+.right-bar {
+    background-color: white;
+    /* test */
+
+}
+
+.bottom-bar .left-bar {
+    width: 10%;
+    height: auto;
+}
+
+.bottom-bar .center-bar {
+    width: 40%;
+    height: auto;
+}
+
+.bottom-bar .right-bar {
+    width: 7%;
+    height: auto;
+}
